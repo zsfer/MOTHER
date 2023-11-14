@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Interactable
+  - World
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3266878337
+    locked: 0
+  - name: Puzzles
+    uniqueID: 998345043
     locked: 0

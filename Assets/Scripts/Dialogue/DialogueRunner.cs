@@ -82,7 +82,7 @@ public class DialogueRunner : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            _onDialogueComplete.Invoke();
+            _onDialogueComplete?.Invoke();
             _onDialogueComplete = null;
         }
     }

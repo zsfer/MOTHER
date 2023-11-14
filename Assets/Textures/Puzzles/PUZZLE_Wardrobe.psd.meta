@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: baa8cdfe075bc3a4a8ee02fcbb0c30f6
+guid: 507c870406e3c3e4395b6e42f8f55f11
 importerOverride:
   nativeImporterType: 2089858483
   scriptedImporterType:
@@ -87,7 +87,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: b014c271a46448640b02accd10e97915
+    spriteID: f56dad2a51fb45c4db6a556fa53c24f7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -99,18 +99,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: WARDROBE
+  - name: INT_Clothes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 537
-      width: 37
-      height: 118
-    spriteID: 8406cd9d455fcae45b282de395f0a88d
+      x: 441
+      y: 4
+      width: 40
+      height: 111
+    spriteID: 2127046594e993e4ea0b5333bbebcb91
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -118,20 +118,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 537}
-    spritePosition: {x: 340, y: 68}
-  - name: Door
+    uvTransform: {x: 441, y: 4}
+    spritePosition: {x: 134, y: 79}
+  - name: INT_RandomBox
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 663
-      width: 18
-      height: 21
-    spriteID: 68fd7011f117e0f48a668cb58af79d81
+      x: 356
+      y: 126
+      width: 92
+      height: 22
+    spriteID: 6f78d4c1663b5554e878ecca20ba079b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,20 +139,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 663}
-    spritePosition: {x: 240, y: 196}
-  - name: ROOM
+    uvTransform: {x: 356, y: 126}
+    spritePosition: {x: 80, y: 204}
+  - name: INT_Safe
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 282
-      width: 435
-      height: 247
-    spriteID: ef4ef20742d1caf49a817cf8dd73a842
+      x: 300
+      y: 218
+      width: 35
+      height: 34
+    spriteID: 294ed77237daf7149aa15239ccc2f928
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,9 +160,72 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 282}
-    spritePosition: {x: 23, y: 12}
-  - name: Layer 1
+    uvTransform: {x: 300, y: 218}
+    spritePosition: {x: 136, y: 80}
+  - name: INT_Shoebox
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 260
+      width: 29
+      height: 20
+    spriteID: 189db71ef85a2b245a746a18b3dd0371
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 260}
+    spritePosition: {x: 174, y: 206}
+  - name: INT_Calendar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 126
+      width: 48
+      height: 84
+    spriteID: 54bcd253288d6ea4facfeafc92f0fd6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 126}
+    spritePosition: {x: 226, y: 141}
+  - name: SM_Clothes
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 300
+      y: 4
+      width: 133
+      height: 114
+    spriteID: 923b3c844afc8f542a1991fc04e0142c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 300, y: 4}
+    spritePosition: {x: 74, y: 76}
+  - name: SM_Wardrobe
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -171,9 +234,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 480
-      height: 270
-    spriteID: 17e0763feaef2f340829c13a2efd8404
+      width: 288
+      height: 280
+    spriteID: 0ff4e7122c14afa46aa6a917d3509c65
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -182,6 +245,27 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 292
+      width: 288
+      height: 280
+    spriteID: 6ea2fdc5505b18e4cbc1ac649f407795
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 292}
     spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
@@ -254,7 +338,7 @@ ScriptedImporter:
   layerMappingOption: 2
   generatePhysicsShape: 0
   paperDollMode: 0
-  keepDupilcateSpriteName: 1
+  keepDupilcateSpriteName: 0
   padding: 4
   spriteSizeExpand: 0
   skeletonAssetReferenceID: 
@@ -263,78 +347,80 @@ ScriptedImporter:
   spritePackingTag: 
   resliceFromLayer: 0
   pSDLayerImportSetting:
-  - spriteId: e5b4e3a07e813524d8010fa44e68504d
-    name: BED
-    layerId: 11
-    flatten: 0
-    isGroup: 0
-    importLayer: 0
-  - spriteId: 68fd7011f117e0f48a668cb58af79d81
-    name: Door
-    layerId: 4
-    flatten: 0
-    isGroup: 0
-    importLayer: 1
-  - spriteId: 35827c6cbdcd67f4389ee4f8854fa921
-    name: PLAYER REF
-    layerId: 10
-    flatten: 0
-    isGroup: 0
-    importLayer: 0
-  - spriteId: 795e5fa84339a4545b2b4750cba8bcd6
-    name: WARDROBE
-    layerId: 12
+  - spriteId: 294ed77237daf7149aa15239ccc2f928
+    name: INT_Safe
+    layerId: 15
     flatten: 0
     isGroup: 0
     importLayer: 1
   psdLayers:
-  - name: WARDROBE
-    spriteName: WARDROBE
+  - name: INT_Clothes
+    spriteName: INT_Clothes
     isGroup: 0
     parentIndex: -1
-    spriteID: 8406cd9d455fcae45b282de395f0a88d
+    spriteID: 2127046594e993e4ea0b5333bbebcb91
     layerID: 14
-    mosaicPosition: {x: 4, y: 537}
+    mosaicPosition: {x: 441, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: PLAYER REF
-    spriteName: PLAYER REF
+  - name: INT_RandomBox
+    spriteName: INT_RandomBox
     isGroup: 0
     parentIndex: -1
-    spriteID: 35827c6cbdcd67f4389ee4f8854fa921
-    layerID: 10
-    mosaicPosition: {x: 4, y: 663}
+    spriteID: 6f78d4c1663b5554e878ecca20ba079b
+    layerID: 6
+    mosaicPosition: {x: 356, y: 126}
     flatten: 0
-    isImported: 0
+    isImported: 1
     isVisible: 1
-  - name: BED
-    spriteName: 
+  - name: INT_Safe
+    spriteName: INT_Safe
     isGroup: 0
     parentIndex: -1
-    spriteID: e5b4e3a07e813524d8010fa44e68504d
-    layerID: 11
-    mosaicPosition: {x: 0, y: 0}
+    spriteID: 294ed77237daf7149aa15239ccc2f928
+    layerID: 15
+    mosaicPosition: {x: 300, y: 218}
     flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Door
-    spriteName: Door
+    isImported: 1
+    isVisible: 1
+  - name: INT_Shoebox
+    spriteName: INT_Shoebox
     isGroup: 0
     parentIndex: -1
-    spriteID: 68fd7011f117e0f48a668cb58af79d81
+    spriteID: 189db71ef85a2b245a746a18b3dd0371
+    layerID: 5
+    mosaicPosition: {x: 300, y: 260}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: INT_Calendar
+    spriteName: INT_Calendar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54bcd253288d6ea4facfeafc92f0fd6e
     layerID: 4
-    mosaicPosition: {x: 4, y: 663}
+    mosaicPosition: {x: 300, y: 126}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: ROOM
-    spriteName: ROOM
+  - name: SM_Clothes
+    spriteName: SM_Clothes
     isGroup: 0
     parentIndex: -1
-    spriteID: ef4ef20742d1caf49a817cf8dd73a842
-    layerID: 3
-    mosaicPosition: {x: 4, y: 282}
+    spriteID: 923b3c844afc8f542a1991fc04e0142c
+    layerID: 7
+    mosaicPosition: {x: 300, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SM_Wardrobe
+    spriteName: SM_Wardrobe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0ff4e7122c14afa46aa6a917d3509c65
+    layerID: 11
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -342,9 +428,9 @@ ScriptedImporter:
     spriteName: Layer 1
     isGroup: 0
     parentIndex: -1
-    spriteID: 17e0763feaef2f340829c13a2efd8404
+    spriteID: 6ea2fdc5505b18e4cbc1ac649f407795
     layerID: 2
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 292}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -354,7 +440,7 @@ ScriptedImporter:
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   spriteSizeExpandChanged: 0
-  generateGOHierarchy: 0
+  generateGOHierarchy: 1
   textureAssetName: 
   prefabAssetName: 
   spriteLibAssetName: 

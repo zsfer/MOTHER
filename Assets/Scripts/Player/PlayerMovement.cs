@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        _audioSource.enabled = GameManager.Instance.CanPlayerMove && _inputVec.magnitude > 0;
         if (!GameManager.Instance.CanPlayerMove) return;
 
         _inputVec = (transform.right * Input.GetAxisRaw("Horizontal") + transform.up * Input.GetAxisRaw("Vertical")).normalized;
@@ -29,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
         _anim.SetFloat("y", _inputVec.y);
 
         // jank footsteps
-        _audioSource.enabled = _inputVec.magnitude > 0;
     }
 
     private void FixedUpdate()
