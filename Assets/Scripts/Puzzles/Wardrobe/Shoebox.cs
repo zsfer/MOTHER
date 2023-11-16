@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoebox : PuzzleInteractable
+public class Shoebox : PuzzleInteractable<WardrobePuzzle>
 {
     [SerializeField] InventoryItem _note;
 
     protected override void Interact()
     {
-        var puzzle = PuzzleManager.Instance.GetActivePuzzle<WardrobePuzzle>();
-        if (puzzle.FoundNote) return;
+        if (Puzzle.FoundNote) return;
 
         DialogueRunner.Instance.RunDialogue(new string[] {
             "I can open this box.",
@@ -17,7 +16,7 @@ public class Shoebox : PuzzleInteractable
         }, () =>
         {
             Inventory.Instance.AddItem(_note);
-            puzzle.FoundNote = true;
+            Puzzle.FoundNote = true;
         });
 
     }

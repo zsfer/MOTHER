@@ -30,10 +30,6 @@ public class DialogueRunner : MonoBehaviour
     }
     #endregion
 
-    private void Start()
-    {
-    }
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
@@ -51,6 +47,13 @@ public class DialogueRunner : MonoBehaviour
 
     public void RunDialogue(string[] lines, Action onDialogueComplete = null, AudioClip dialogueSound = null)
     {
+        _dialogueText.text = string.Empty;
+        if (lines == null || lines.Length == 0)
+        {
+            onDialogueComplete.Invoke();
+            return;
+        }
+
         _lineIndex = 0;
         _lines = lines;
         if (onDialogueComplete != null) _onDialogueComplete = onDialogueComplete;

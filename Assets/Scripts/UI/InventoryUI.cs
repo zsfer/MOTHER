@@ -15,8 +15,11 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI _detailsItemName;
     [SerializeField] TextMeshProUGUI _detailsItemDescription;
     [SerializeField] Image _detailsItemImage;
+    [SerializeField] GameObject _detailsInteractButton;
 
     private bool _isShowing;
+
+    private InventoryItem _selectedItem;
 
     public static InventoryUI Instance { get; private set; }
     private void Awake()
@@ -26,16 +29,17 @@ public class InventoryUI : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public void ToggleUI()
     {
-        if (!GameManager.Instance.CanPlayerMove || PuzzleManager.Instance.IsInPuzzle) return;
+        if (PuzzleManager.Instance.IsInPuzzle) return;
 
         _isShowing = !_isShowing;
-        gameObject.SetActive(_isShowing);
+        transform.GetChild(0).gameObject.SetActive(_isShowing);
         _detailsUI.SetActive(false);
+        GameManager.Instance.Freeze(_isShowing);
 
         UpdateUI();
     }
@@ -55,10 +59,20 @@ public class InventoryUI : MonoBehaviour
 
     public void ShowDetail(InventoryItem item)
     {
+        _selectedItem = item;
         _detailsUI.SetActive(true);
         _detailsItemName.text = item.ItemName;
         _detailsItemDescription.text = item.ItemDescription;
         _detailsItemImage.sprite = item.InteractImage;
+
+        _detailsInteractButton.SetActive(item.AfterInteractItem != null);
+    }
+
+    // ONLY HAPPENS ONCE SO NO NEED FOR IT TO BE GENERAL USE RIGHT NEOW
+    // will update in the future if need but im out of time.
+    public void InteractItem()
+    {
+        Inventory.Instance.AddItem(_selectedItem.AfterInteractItem);
     }
 
 }

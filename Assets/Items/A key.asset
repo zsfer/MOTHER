@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
-  m_Name: Note
+  m_Name: A key
   m_EditorClassIdentifier: 
-  ItemName: Note
-  ItemDescription: A note I found inside a shoebox.
-  InventoryIcon: {fileID: 8497527691206924581, guid: 2b40ac9c3d8435945bbf4ba9bcaeda7c, type: 3}
-  InteractImage: {fileID: -2999990788276771680, guid: f3ef22302a6d1244db5dbfc8bed2b56b, type: 3}
+  AssetID: ToyboxKey
+  ItemName: A key of some kind
+  ItemDescription: I wonder what this is for
+  InventoryIcon: {fileID: 3451893882834147316, guid: 35817d6a89aadac41b965191be0e9f89, type: 3}
+  InteractImage: {fileID: 3451893882834147316, guid: 35817d6a89aadac41b965191be0e9f89, type: 3}
   AfterInteractItem: {fileID: 0}

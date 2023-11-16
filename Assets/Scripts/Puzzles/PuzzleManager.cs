@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public Puzzle[] Puzzles;
     public bool IsInPuzzle;
+
+    public Puzzle[] Puzzles;
     public GameObject[] DisableOnPuzzleLoad;
     [SerializeField] GameObject _puzzleUI;
 
@@ -19,6 +20,18 @@ public class PuzzleManager : MonoBehaviour
     void Start()
     {
         UnloadPuzzles();
+        GameManager.Instance.Freeze(true);
+    }
+
+    private void Update()
+    {
+        if (IsInPuzzle)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.S))
+            {
+                UnloadPuzzles();
+            }
+        }
     }
 
     public TPuzzle GetPuzzle<TPuzzle>() where TPuzzle : PuzzleBehaviour
@@ -45,9 +58,12 @@ public class PuzzleManager : MonoBehaviour
 
     public void LoadPuzzle(string puzzleName)
     {
+        if (Puzzles.Where(p => p.PuzzleName == puzzleName).FirstOrDefault() == null) return;
+
         foreach (var puzzle in Puzzles)
         {
             puzzle.Behaviour.gameObject.SetActive(puzzle.PuzzleName == puzzleName);
+            if (puzzle.PuzzleName == puzzleName) puzzle.Behaviour.OpenPuzzle();
         }
 
         foreach (var obj in DisableOnPuzzleLoad)
@@ -58,14 +74,14 @@ public class PuzzleManager : MonoBehaviour
         _puzzleUI.SetActive(true);
         IsInPuzzle = true;
         UIController.Instance.RemoveHint();
-        GameManager.Instance.CanPlayerMove = false;
+        GameManager.Instance.Freeze(true);
     }
 
     public void UnloadPuzzles()
     {
         foreach (var puzzle in Puzzles)
         {
-            puzzle.Behaviour.gameObject.SetActive(false);
+            puzzle.Behaviour.LeavePuzzle();
         }
 
         foreach (var obj in DisableOnPuzzleLoad)
@@ -75,7 +91,7 @@ public class PuzzleManager : MonoBehaviour
 
         _puzzleUI.SetActive(false);
         IsInPuzzle = false;
-        GameManager.Instance.CanPlayerMove = true;
+        GameManager.Instance.Freeze(false);
     }
 
 }

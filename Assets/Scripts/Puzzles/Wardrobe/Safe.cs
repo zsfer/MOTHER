@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Safe : PuzzleInteractable
+public class Safe : PuzzleInteractable<WardrobePuzzle>
 {
     private bool _isFirst;
 
@@ -15,6 +15,10 @@ public class Safe : PuzzleInteractable
                 PuzzleManager.Instance.GetPuzzle<SafePuzzle>().OpenSafe();
                 _isFirst = false;
             });
+        }
+        else
+        {
+            PuzzleManager.Instance.GetPuzzle<SafePuzzle>().OpenSafe();
         }
     }
 }

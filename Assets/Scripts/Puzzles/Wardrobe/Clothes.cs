@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Clothes : PuzzleInteractable
+public class Clothes : PuzzleInteractable<WardrobePuzzle>
 {
     protected override void Interact()
     {

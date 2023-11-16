@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -18,7 +19,13 @@ public class Inventory : MonoBehaviour
         if (Items.Contains(item)) return;
 
         Items.Add(item);
+        InventoryUI.Instance.UpdateUI();
         UIController.Instance.ShowNotification(item.name + " added to inventory");
+    }
+
+    public InventoryItem GetItemByAssetID(string assetID)
+    {
+        return Items.Where(i => i.AssetID.Equals(assetID)).FirstOrDefault();
     }
 
     void Update()
@@ -31,15 +38,3 @@ public class Inventory : MonoBehaviour
 
 }
 
-
-
-[CreateAssetMenu(fileName = "Inventory Item", menuName = "MOTHER/Inventory Item", order = 0)]
-public class InventoryItem : ScriptableObject
-{
-    public string ItemName;
-    [TextArea]
-    public string ItemDescription;
-    public Sprite InventoryIcon;
-    public Sprite InteractImage;
-
-}

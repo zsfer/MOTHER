@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ccae739171ed6284b8261307e5fe45a1
+guid: 1a3d5f6df5297f049a35a7615ff63fb2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7662191818796630423
-    second: PUZZLE_Safe_0
+      213: 8541034490475753071
+    second: MOTHER_StartDoor_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -122,22 +122,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PUZZLE_Safe_0
+      name: MOTHER_StartDoor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 182
-        height: 182
+        width: 60
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7910748fcd2955a60800000000000000
-      internalID: 7662191818796630423
+      spriteID: f6eaa23ed99d78670800000000000000
+      internalID: 8541034490475753071
       vertices: []
       indices: 
       edges: []
@@ -145,7 +145,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7616dc147a82da4418d9cd203b22e77e
     internalID: 0
     vertices: []
     indices: 
@@ -153,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PUZZLE_Safe_0: 7662191818796630423
+      MOTHER_StartDoor_0: 8541034490475753071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

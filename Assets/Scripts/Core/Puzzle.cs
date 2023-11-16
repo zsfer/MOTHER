@@ -11,7 +11,13 @@ public class Puzzle
 
 public class PuzzleBehaviour : MonoBehaviour
 {
-    public void LeavePuzzle()
+    public virtual void OpenPuzzle()
     {
+        gameObject.SetActive(true);
+    }
+
+    public virtual void LeavePuzzle()
+    {
+        gameObject.SetActive(false);
     }
 }

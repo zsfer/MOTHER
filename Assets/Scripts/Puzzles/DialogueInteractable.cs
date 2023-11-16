@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueInteractable : PuzzleInteractable
+public class DialogueInteractable : PuzzleInteractable<PuzzleBehaviour>
 {
     public string[] Lines;
     public UnityEvent OnDialogueComplete;

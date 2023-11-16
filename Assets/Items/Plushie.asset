@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
+  m_Name: Plushie
+  m_EditorClassIdentifier: 
+  ItemName: A weird looking plushie
+  ItemDescription: Something's up with this plushie.
+  InventoryIcon: {fileID: 9071432006241602458, guid: 9798e9dfcc08993498a539e8f84d3f13, type: 3}
+  InteractImage: {fileID: 9071432006241602458, guid: 9798e9dfcc08993498a539e8f84d3f13, type: 3}
+  AfterInteractItem: {fileID: 11400000, guid: c14806f565ed4e84ebafb7a8c5359447, type: 2}

@@ -5,4 +5,5 @@ using UnityEngine;
 public class WardrobePuzzle : PuzzleBehaviour
 {
     public bool FoundNote;
+
 }

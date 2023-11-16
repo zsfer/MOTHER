@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: baa8cdfe075bc3a4a8ee02fcbb0c30f6
+guid: 9798e9dfcc08993498a539e8f84d3f13
 importerOverride:
   nativeImporterType: 2089858483
   scriptedImporterType:
@@ -87,7 +87,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: a178b451da1f99943b5c5a186e80c3c9
+    spriteID: fc542057035984f4b90825a3c95a3b35
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -99,18 +99,18 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: INT_Plant
+  - name: INT_Plushie
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 95
-      y: 612
-      width: 42
-      height: 70
-    spriteID: e11fe9e4675e37149988a90eec50405e
+      x: 371
+      y: 4
+      width: 46
+      height: 62
+    spriteID: 8670ce1bfeee67541b527fa6772ea285
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -118,72 +118,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 95, y: 612}
-    spritePosition: {x: 331, y: 23}
-  - name: INT_Window
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 49
-      y: 537
-      width: 38
-      height: 109
-    spriteID: a9806a43b55bcfe47a250d4d5fe88621
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 49, y: 537}
-    spritePosition: {x: 78, y: 98}
-  - name: INT_Bookshelf
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 95
-      y: 537
-      width: 55
-      height: 67
-    spriteID: f609d1509c29f8747a504a640055ead5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 95, y: 537}
-    spritePosition: {x: 276, y: 164}
-  - name: INT_Toys
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 158
-      y: 537
-      width: 59
-      height: 30
-    spriteID: b1321fe3e3740a24382a938d3ad62206
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 158, y: 537}
-    spritePosition: {x: 140, y: 156}
-  - name: WARDROBE
+    uvTransform: {x: 371, y: 4}
+    spritePosition: {x: 114, y: 59}
+  - name: SM_Toys
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -192,9 +129,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 537
-      width: 37
-      height: 118
-    spriteID: 1c8126016e38a1a448b376ef7c6eaeed
+      width: 229
+      height: 141
+    spriteID: 33ec3c9d89a38d247a2c5aad2eec6b1a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,30 +139,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 537}
-    spritePosition: {x: 340, y: 68}
-  - name: Door
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 95
-      y: 690
-      width: 18
-      height: 21
-    spriteID: b70324d8374fede41aa65ba987faca8e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 95, y: 690}
-    spritePosition: {x: 240, y: 196}
-  - name: ROOM
+    uvTransform: {x: -40, y: 511}
+    spritePosition: {x: 72, y: 26}
+  - name: SM_Toybox
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -233,10 +149,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 282
-      width: 435
-      height: 247
-    spriteID: 8e09522d4ff85e145b736fdc19f18f15
+      y: 279
+      width: 317
+      height: 250
+    spriteID: e87094f250b6e7e4c979d628c720dd72
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,9 +160,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 282}
-    spritePosition: {x: 23, y: 12}
-  - name: Layer 1
+    uvTransform: {x: 4, y: 279}
+    spritePosition: {x: 28, y: 17}
+  - name: BG
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -255,9 +171,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 480
-      height: 270
-    spriteID: 71a004b3640c7ea49afa7be849df57e3
+      width: 359
+      height: 267
+    spriteID: 7e9ae033c555cee429e75f0d531ce31d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -348,102 +264,42 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: INT_Plant
-    spriteName: INT_Plant
+  - name: INT_Plushie
+    spriteName: INT_Plushie
     isGroup: 0
     parentIndex: -1
-    spriteID: e11fe9e4675e37149988a90eec50405e
-    layerID: 20
-    mosaicPosition: {x: 95, y: 612}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: INT_Window
-    spriteName: INT_Window
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a9806a43b55bcfe47a250d4d5fe88621
-    layerID: 19
-    mosaicPosition: {x: 49, y: 537}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: INT_Bookshelf
-    spriteName: INT_Bookshelf
-    isGroup: 0
-    parentIndex: -1
-    spriteID: f609d1509c29f8747a504a640055ead5
-    layerID: 18
-    mosaicPosition: {x: 95, y: 537}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: INT_Toys
-    spriteName: INT_Toys
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b1321fe3e3740a24382a938d3ad62206
-    layerID: 17
-    mosaicPosition: {x: 158, y: 537}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: WARDROBE
-    spriteName: WARDROBE
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 1c8126016e38a1a448b376ef7c6eaeed
+    spriteID: 8670ce1bfeee67541b527fa6772ea285
     layerID: 14
+    mosaicPosition: {x: 371, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SM_Toys
+    spriteName: SM_Toys
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 33ec3c9d89a38d247a2c5aad2eec6b1a
+    layerID: 8
     mosaicPosition: {x: 4, y: 537}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: PLAYER REF
-    spriteName: 
+  - name: SM_Toybox
+    spriteName: SM_Toybox
     isGroup: 0
     parentIndex: -1
-    spriteID: a70d529d5b0853d44a8a67c0f33b3ee1
-    layerID: 10
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: BED
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 39a7e6c971fb1d44e94924d2480a99d4
-    layerID: 11
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
-  - name: Door
-    spriteName: Door
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b70324d8374fede41aa65ba987faca8e
-    layerID: 4
-    mosaicPosition: {x: 95, y: 690}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: ROOM
-    spriteName: ROOM
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8e09522d4ff85e145b736fdc19f18f15
-    layerID: 3
-    mosaicPosition: {x: 4, y: 282}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Layer 1
-    spriteName: Layer 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 71a004b3640c7ea49afa7be849df57e3
+    spriteID: e87094f250b6e7e4c979d628c720dd72
     layerID: 2
+    mosaicPosition: {x: 4, y: 279}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BG
+    spriteName: BG
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7e9ae033c555cee429e75f0d531ce31d
+    layerID: 3
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1

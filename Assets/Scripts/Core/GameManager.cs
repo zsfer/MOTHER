@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public bool CanPlayerMove;
+    public bool CanPlayerMove { get; private set; }
 
     #region Singleton
     public static GameManager Instance { get; private set; }
@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    void Update()
+    public void Freeze(bool isFrozen)
     {
-
+        CanPlayerMove = !isFrozen;
     }
 }

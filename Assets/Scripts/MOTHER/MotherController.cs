@@ -21,11 +21,11 @@ public class MotherController : MonoBehaviour
         StartCoroutine(IntroCutscene());
         IEnumerator IntroCutscene()
         {
-            GameManager.Instance.CanPlayerMove = false;
+            GameManager.Instance.Freeze(true);
             yield return new WaitForSeconds(1);
             DialogueRunner.Instance.RunDialogue(new string[] { "Goodnight my love. You should head to bed now.", "I'll be checking on you frequently.", "Sleep tight." }, () =>
             {
-                GameManager.Instance.CanPlayerMove = true;
+                GameManager.Instance.Freeze(false);
                 SetMotherVisible(false);
             }, _dialogueSFX);
         }
