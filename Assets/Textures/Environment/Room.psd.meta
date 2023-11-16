@@ -140,7 +140,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 49, y: 537}
-    spritePosition: {x: 78, y: 98}
+    spritePosition: {x: 86, y: 116}
   - name: INT_Bookshelf
     originalName: 
     pivot: {x: 0.5, y: 0.5}

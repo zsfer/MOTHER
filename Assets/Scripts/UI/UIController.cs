@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
+    [SerializeField] GameObject _hintBG;
     [SerializeField] TextMeshProUGUI _hintText;
     [SerializeField] TextMeshProUGUI _notificationText;
 
@@ -20,11 +21,13 @@ public class UIController : MonoBehaviour
 
     public void ShowHint(string text)
     {
+        _hintBG.SetActive(true);
         _hintText.text = text;
     }
 
     public void RemoveHint()
     {
+        _hintBG.SetActive(false);
         _hintText.text = string.Empty;
     }
 
