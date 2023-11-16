@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public string InteractText;
+    public AudioClip InteractSound;
 
     private bool _inTrigger;
 
@@ -40,6 +41,11 @@ public class Interactable : MonoBehaviour
     protected virtual void Interact()
     {
         OnInteract.Invoke();
+
+        if (InteractSound != null)
+        {
+            GetComponent<AudioSource>().PlayOneShot(InteractSound);
+        }
     }
 
 }
