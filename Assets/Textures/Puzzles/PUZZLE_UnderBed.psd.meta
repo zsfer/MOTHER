@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ccae739171ed6284b8261307e5fe45a1
+guid: 25f256b48b31a9a4687a82201d37bcde
 importerOverride:
   nativeImporterType: 2089858483
   scriptedImporterType:
@@ -87,7 +87,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: 2c4564470a906b44a8556134b82e3c93
+    spriteID: 637d5c21c0b9f2c4faa64acbd90b42b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -99,7 +99,49 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: SM_Safe
+  - name: INT_Floorboard
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 530
+      y: 4
+      width: 40
+      height: 39
+    spriteID: 7d9e53e179584974ea47b02126b92dab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 530, y: 4}
+    spritePosition: {x: 223, y: 58}
+  - name: SM_UnderFloor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 578
+      y: 4
+      width: 40
+      height: 39
+    spriteID: 647cc81c8641ecd4386dea64cb374e66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 578, y: 4}
+    spritePosition: {x: 223, y: 58}
+  - name: SM_UnderBed
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -108,9 +150,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 182
-      height: 182
-    spriteID: e55a9980b2abb664f85f6ef412933c59
+      width: 518
+      height: 165
+    spriteID: bc4d0bd49fe0f0841a13b43de4cd3b64
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -119,48 +161,6 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: 0}
-  - name: INT_WindowKey
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 194
-      y: 4
-      width: 29
-      height: 14
-    spriteID: e08923a6c81d2724c83c7a56b8b334f7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 194, y: 4}
-    spritePosition: {x: 79, y: 84}
-  - name: SM_Interior
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 194
-      width: 182
-      height: 182
-    spriteID: 70024e8e83969f84cabfe6546bb7a571
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 194}
     spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
@@ -243,33 +243,33 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: SM_Safe
-    spriteName: SM_Safe
+  - name: INT_Floorboard
+    spriteName: INT_Floorboard
     isGroup: 0
     parentIndex: -1
-    spriteID: e55a9980b2abb664f85f6ef412933c59
-    layerID: 3
-    mosaicPosition: {x: 4, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: INT_WindowKey
-    spriteName: INT_WindowKey
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e08923a6c81d2724c83c7a56b8b334f7
+    spriteID: 7d9e53e179584974ea47b02126b92dab
     layerID: 8
-    mosaicPosition: {x: 194, y: 4}
+    mosaicPosition: {x: 530, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: SM_Interior
-    spriteName: SM_Interior
+  - name: SM_UnderFloor
+    spriteName: SM_UnderFloor
     isGroup: 0
     parentIndex: -1
-    spriteID: 70024e8e83969f84cabfe6546bb7a571
-    layerID: 7
-    mosaicPosition: {x: 4, y: 194}
+    spriteID: 647cc81c8641ecd4386dea64cb374e66
+    layerID: 10
+    mosaicPosition: {x: 578, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SM_UnderBed
+    spriteName: SM_UnderBed
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bc4d0bd49fe0f0841a13b43de4cd3b64
+    layerID: 5
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

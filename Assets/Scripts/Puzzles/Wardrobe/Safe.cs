@@ -12,13 +12,13 @@ public class Safe : PuzzleInteractable<WardrobePuzzle>
         {
             DialogueRunner.Instance.RunDialogue(new string[] { "What's a safe doing here?" }, () =>
             {
-                PuzzleManager.Instance.GetPuzzle<SafePuzzle>().OpenSafe();
+                PuzzleManager.Instance.LoadPuzzle("Safe");
                 _isFirst = false;
             });
         }
         else
         {
-            PuzzleManager.Instance.GetPuzzle<SafePuzzle>().OpenSafe();
+            PuzzleManager.Instance.LoadPuzzle("Safe");
         }
     }
 }

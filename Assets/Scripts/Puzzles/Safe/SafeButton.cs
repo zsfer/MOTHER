@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bed : Interactable
+public class SafeButton : PuzzleInteractable<SafePuzzle>
 {
     protected override void Interact()
     {
-        Player.Instance.Hide(true);
+        base.Interact();
+        Puzzle.AddCode(InteractionName);
     }
 }

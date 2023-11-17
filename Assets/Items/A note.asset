@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
-  m_Name: Plushie
+  m_Name: A note
   m_EditorClassIdentifier: 
-  AssetID: 
-  ItemName: A weird looking plushie
-  ItemDescription: Something's up with this plushie.
-  InventoryIcon: {fileID: 9071432006241602458, guid: 9798e9dfcc08993498a539e8f84d3f13, type: 3}
-  InteractImage: {fileID: 9071432006241602458, guid: 9798e9dfcc08993498a539e8f84d3f13, type: 3}
-  HasInteraction: 1
+  AssetID: SafeNote
+  AllowDuplicate: 0
+  ItemName: A note
+  ItemDescription: Looks like it's been ripped off of something
+  InventoryIcon: {fileID: -6337726865232260801, guid: 2ad48c8e18d1b3345b400f2f960fdec8, type: 3}
+  InteractImage: {fileID: -6337726865232260801, guid: 2ad48c8e18d1b3345b400f2f960fdec8, type: 3}
+  HasInteraction: 0
   RequiredItem: {fileID: 0}
-  AfterInteractItem: {fileID: 11400000, guid: c14806f565ed4e84ebafb7a8c5359447, type: 2}
+  AfterInteractItem: {fileID: 0}
   OnInteract:
     m_PersistentCalls:
       m_Calls: []

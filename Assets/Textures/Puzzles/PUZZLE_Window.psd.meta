@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ccae739171ed6284b8261307e5fe45a1
+guid: 0fb6bdf04777bc24cb0f13cca913fd60
 importerOverride:
   nativeImporterType: 2089858483
   scriptedImporterType:
@@ -87,7 +87,7 @@ ScriptedImporter:
       y: 0
       width: 0
       height: 0
-    spriteID: 2c4564470a906b44a8556134b82e3c93
+    spriteID: 65608fc41965215499e4e591b2159931
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -99,7 +99,91 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: SM_Safe
+  - name: INT_Lock
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 4
+      width: 12
+      height: 16
+    spriteID: ab75aa9b7a8c6f24a8ae604cf126c8f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 210, y: 4}
+    spritePosition: {x: 26, y: 68}
+  - name: INT_Lock
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 28
+      width: 12
+      height: 16
+    spriteID: 845a3d0f1e5e6324fa0d4177db01a095
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 210, y: 28}
+    spritePosition: {x: 161, y: 94}
+  - name: INT_Lock
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 52
+      width: 12
+      height: 16
+    spriteID: c0e6951fe964b5a4c90ea484bf371467
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 210, y: 52}
+    spritePosition: {x: 26, y: 120}
+  - name: SM_Window
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 207
+      width: 141
+      height: 145
+    spriteID: 4afc6282093b9e74eb4772f90f9bdb00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 207}
+    spritePosition: {x: 29, y: 25}
+  - name: Layer 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -108,9 +192,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 182
-      height: 182
-    spriteID: e55a9980b2abb664f85f6ef412933c59
+      width: 198
+      height: 195
+    spriteID: d22b5b9806b475f4b8f63e591a885500
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -119,48 +203,6 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: 0}
-  - name: INT_WindowKey
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 194
-      y: 4
-      width: 29
-      height: 14
-    spriteID: e08923a6c81d2724c83c7a56b8b334f7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 194, y: 4}
-    spritePosition: {x: 79, y: 84}
-  - name: SM_Interior
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 194
-      width: 182
-      height: 182
-    spriteID: 70024e8e83969f84cabfe6546bb7a571
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 194}
     spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
@@ -243,33 +285,53 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
-  - name: SM_Safe
-    spriteName: SM_Safe
+  - name: INT_Lock
+    spriteName: INT_Lock
     isGroup: 0
     parentIndex: -1
-    spriteID: e55a9980b2abb664f85f6ef412933c59
-    layerID: 3
-    mosaicPosition: {x: 4, y: 4}
+    spriteID: ab75aa9b7a8c6f24a8ae604cf126c8f4
+    layerID: 13
+    mosaicPosition: {x: 210, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: INT_WindowKey
-    spriteName: INT_WindowKey
+  - name: INT_Lock
+    spriteName: INT_Lock
     isGroup: 0
     parentIndex: -1
-    spriteID: e08923a6c81d2724c83c7a56b8b334f7
-    layerID: 8
-    mosaicPosition: {x: 194, y: 4}
+    spriteID: 845a3d0f1e5e6324fa0d4177db01a095
+    layerID: 12
+    mosaicPosition: {x: 210, y: 28}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: SM_Interior
-    spriteName: SM_Interior
+  - name: INT_Lock
+    spriteName: INT_Lock
     isGroup: 0
     parentIndex: -1
-    spriteID: 70024e8e83969f84cabfe6546bb7a571
+    spriteID: c0e6951fe964b5a4c90ea484bf371467
+    layerID: 11
+    mosaicPosition: {x: 210, y: 52}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SM_Window
+    spriteName: SM_Window
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4afc6282093b9e74eb4772f90f9bdb00
+    layerID: 4
+    mosaicPosition: {x: 4, y: 207}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d22b5b9806b475f4b8f63e591a885500
     layerID: 7
-    mosaicPosition: {x: 4, y: 194}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1

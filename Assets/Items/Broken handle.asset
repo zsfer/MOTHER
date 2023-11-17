@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
   m_Name: Broken handle
   m_EditorClassIdentifier: 
+  AssetID: BrokenHandle
   ItemName: A broken handle
   ItemDescription: It's broken off from something.
   InventoryIcon: {fileID: -1021317050663026726, guid: 3a907958556f12e4a9577f96ab1ba31f, type: 3}

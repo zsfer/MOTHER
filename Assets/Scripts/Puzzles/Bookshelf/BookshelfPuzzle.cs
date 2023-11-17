@@ -60,4 +60,9 @@ public class BookshelfPuzzle : PuzzleBehaviour
         _combinationScreen.SetActive(false);
         base.LeavePuzzle();
     }
+
+    private void Update()
+    {
+        print(_combinationScreen.activeSelf);
+    }
 }

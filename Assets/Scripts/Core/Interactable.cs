@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        if (_inTrigger && Input.GetKeyDown(KeyCode.E))
+        if (_inTrigger && Input.GetKeyDown(KeyCode.E) && GameManager.Instance.CanPlayerMove)
         {
             Interact();
         }

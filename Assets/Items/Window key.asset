@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
   m_Name: Window key
   m_EditorClassIdentifier: 
+  AssetID: WindowKey
+  AllowDuplicate: 1
   ItemName: Key for the window
   ItemDescription: I need this to open the window
   InventoryIcon: {fileID: 995053860972639553, guid: fcdfec2925932ca4d98f6851cf8c15d0, type: 3}
   InteractImage: {fileID: 995053860972639553, guid: fcdfec2925932ca4d98f6851cf8c15d0, type: 3}
+  HasInteraction: 0
+  RequiredItem: {fileID: 0}
   AfterInteractItem: {fileID: 0}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []

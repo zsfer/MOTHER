@@ -32,9 +32,9 @@ public class InventoryUI : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    public void ToggleUI()
+    public void ToggleUI(bool forceOpen = false)
     {
-        if (PuzzleManager.Instance.IsInPuzzle) return;
+        if (PuzzleManager.Instance.IsInPuzzle && !forceOpen) return;
 
         _isShowing = !_isShowing;
         transform.GetChild(0).gameObject.SetActive(_isShowing);
@@ -65,14 +65,14 @@ public class InventoryUI : MonoBehaviour
         _detailsItemDescription.text = item.ItemDescription;
         _detailsItemImage.sprite = item.InteractImage;
 
-        _detailsInteractButton.SetActive(item.AfterInteractItem != null);
+        _detailsInteractButton.SetActive(item.HasInteraction);
     }
 
     // ONLY HAPPENS ONCE SO NO NEED FOR IT TO BE GENERAL USE RIGHT NEOW
     // will update in the future if need but im out of time.
     public void InteractItem()
     {
-        Inventory.Instance.AddItem(_selectedItem.AfterInteractItem);
+        Inventory.Instance.UseItem(_selectedItem);
     }
 
 }

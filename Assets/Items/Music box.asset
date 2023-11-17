@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1a1d5db7a3d90459a1e6a9fa166b29, type: 3}
+  m_Name: Music box
+  m_EditorClassIdentifier: 
+  AssetID: MusicBox
+  ItemName: Music box
+  ItemDescription: A small music box
+  InventoryIcon: {fileID: 921161738758590232, guid: d0f08b5bd214d7d409f91f8a3452aa41, type: 3}
+  InteractImage: {fileID: 921161738758590232, guid: d0f08b5bd214d7d409f91f8a3452aa41, type: 3}
+  HasInteraction: 1
+  RequiredItem: {fileID: 0}
+  AfterInteractItem: {fileID: 0}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000}
+        m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
+        m_MethodName: LoadPuzzle
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MusicBox
+          m_BoolArgument: 0
+        m_CallState: 2

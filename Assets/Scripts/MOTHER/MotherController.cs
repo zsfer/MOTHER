@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class MotherController : MonoBehaviour
@@ -9,9 +10,15 @@ public class MotherController : MonoBehaviour
     [SerializeField] AudioClip _doorCloseSFX;
 
     private SpriteRenderer _renderer;
-    private bool _isInRoom;
+    public bool IsInRoom { get; private set; }
 
     private AudioSource _audio;
+
+    public static MotherController Instance { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -27,13 +34,14 @@ public class MotherController : MonoBehaviour
             {
                 GameManager.Instance.Freeze(false);
                 SetMotherVisible(false);
+                GameManager.Instance.GameStarted = true;
             }, _dialogueSFX);
         }
     }
 
     void Update()
     {
-        if (_isInRoom && !Player.Instance.IsHiding)
+        if (IsInRoom && !Player.Instance.IsHiding)
         {
             print("GOT YOU!");
         }
@@ -41,7 +49,7 @@ public class MotherController : MonoBehaviour
 
     void SetMotherVisible(bool isVisible)
     {
-        _isInRoom = isVisible;
+        IsInRoom = isVisible;
         _renderer.enabled = isVisible;
         _audio.PlayOneShot(_doorCloseSFX);
     }

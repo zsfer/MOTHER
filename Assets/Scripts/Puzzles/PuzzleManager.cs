@@ -63,7 +63,11 @@ public class PuzzleManager : MonoBehaviour
         foreach (var puzzle in Puzzles)
         {
             puzzle.Behaviour.gameObject.SetActive(puzzle.PuzzleName == puzzleName);
-            if (puzzle.PuzzleName == puzzleName) puzzle.Behaviour.OpenPuzzle();
+            if (puzzle.PuzzleName == puzzleName)
+            {
+                print("[PUZZLE]: Loading " + puzzleName + "Puzzle");
+                puzzle.Behaviour.OpenPuzzle();
+            }
         }
 
         foreach (var obj in DisableOnPuzzleLoad)
