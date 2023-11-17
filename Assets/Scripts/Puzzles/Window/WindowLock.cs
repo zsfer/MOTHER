@@ -6,6 +6,7 @@ public class WindowLock : PuzzleInteractable<WindowPuzzle>
 {
     protected override void Interact()
     {
+        base.Interact();
         if (Inventory.Instance.GetItemByAssetID("WindowKey") != null)
         {
             Inventory.Instance.RemoveItemByAssetID("WindowKey");

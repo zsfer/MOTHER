@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Toybox : Interactable
 {
-    private bool _isOpenedBefore;
 
     protected override void Interact()
     {
@@ -14,7 +13,6 @@ public class Toybox : Interactable
             return;
         }
 
-        _isOpenedBefore = true;
         PuzzleManager.Instance.LoadPuzzle("Toybox");
 
         base.Interact();

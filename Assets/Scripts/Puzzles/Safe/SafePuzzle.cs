@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SafePuzzle : PuzzleBehaviour
 {
     [SerializeField] GameObject _puzzleUI;
     [SerializeField] GameObject _safeDoor;
     [SerializeField] TextMeshProUGUI _safeScreen;
     [SerializeField] GameObject _windowKey;
+    [SerializeField] AudioClip _safeError;
+
     string _code = "";
 
     private void Start()
@@ -51,8 +54,8 @@ public class SafePuzzle : PuzzleBehaviour
         }
         else
         {
-            // TODO play alarm and alert mother
-            // TODO alert mother
+            GetComponent<AudioSource>().PlayOneShot(_safeError);
+            MotherController.Instance.ChangeState(MotherState.GoToRoom);
             _code = "";
             VerifyCode();
         }

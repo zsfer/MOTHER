@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public bool CanPlayerMove { get; private set; }
     public bool GameStarted { get; set; }
 
+    public bool FrozenTime { get; set; }
+
     public GameObject[] DisableOnGameOver;
+
+    [SerializeField] GameObject _endScreen;
 
     #region Singleton
     public static GameManager Instance { get; private set; }
@@ -28,5 +33,7 @@ public class GameManager : MonoBehaviour
         {
             item.SetActive(false);
         }
+
+        SceneManager.LoadScene(3);
     }
 }

@@ -32,6 +32,18 @@ public class InventoryUI : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
+    public void ShowUI(bool state)
+    {
+        if (PuzzleManager.Instance.IsInPuzzle) return;
+
+        _isShowing = state;
+        transform.GetChild(0).gameObject.SetActive(_isShowing);
+        _detailsUI.SetActive(_isShowing);
+        GameManager.Instance.Freeze(_isShowing);
+
+        UpdateUI();
+    }
+
     public void ToggleUI(bool forceOpen = false)
     {
         if (PuzzleManager.Instance.IsInPuzzle && !forceOpen) return;

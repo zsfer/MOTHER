@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class BookshelfPuzzle : PuzzleBehaviour
 {
     private string _puzzleOrder = "";
@@ -9,8 +10,15 @@ public class BookshelfPuzzle : PuzzleBehaviour
     [SerializeField] GameObject _combinationItem;
     [SerializeField] GameObject _drawerCover;
 
+    [SerializeField] GameObject[] _hidden;
+    [SerializeField] AudioClip _errorSFX;
+
     private void Start()
     {
+        foreach (var o in _hidden)
+        {
+            o.SetActive(false);
+        }
         _combinationScreen.SetActive(false);
     }
 
@@ -30,6 +38,10 @@ public class BookshelfPuzzle : PuzzleBehaviour
 
         if (_puzzleOrder == "1234")
         {
+            foreach (var o in _hidden)
+            {
+                o.SetActive(true);
+            }
             Destroy(_drawerCover);
         }
         else
@@ -37,8 +49,8 @@ public class BookshelfPuzzle : PuzzleBehaviour
             StartCoroutine(WrongCode());
             IEnumerator WrongCode()
             {
-                // play alarm sound
-                // alert mother
+                GetComponent<AudioSource>().PlayOneShot(_errorSFX);
+                MotherController.Instance.ChangeState(MotherState.GoToRoom);
                 yield return new WaitForSeconds(1);
                 _puzzleOrder = "";
                 foreach (Transform child in _combinationScreen.transform)

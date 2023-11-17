@@ -23,12 +23,15 @@ public class MusicBox : PuzzleInteractable<MusicBoxPuzzle>
         StartCoroutine(PlayMusicBox());
         IEnumerator PlayMusicBox()
         {
-
             _audio.clip = _musicBoxTune;
             _audio.Play();
+            GameManager.Instance.FrozenTime = true;
             yield return new WaitUntil(() => _audio.time >= _musicBoxTune.length);
-            DialogueRunner.Instance.RunDialogue(new string[] { "?", "It dropped something" });
-            _windowKey.SetActive(true);
+            DialogueRunner.Instance.RunDialogue(new string[] { "?", "It dropped something" }, () =>
+            {
+                _windowKey.SetActive(true);
+                GameManager.Instance.FrozenTime = false;
+            });
         }
     }
 }

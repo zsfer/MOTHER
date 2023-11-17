@@ -8,7 +8,6 @@ public class WindowPuzzle : PuzzleBehaviour
     public int LocksRemoved { get; set; }
     private bool _firstLoad;
 
-    [SerializeField] GameObject _endScreen;
 
     public override void OpenPuzzle()
     {
@@ -31,7 +30,7 @@ public class WindowPuzzle : PuzzleBehaviour
         if (LocksRemoved == 3)
         {
             // TODO game over
-            _endScreen.SetActive(true);
+            GameManager.Instance.GameOver();
         }
     }
 }

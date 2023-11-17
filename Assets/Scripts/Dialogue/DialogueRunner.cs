@@ -12,6 +12,7 @@ public class DialogueRunner : MonoBehaviour
     public float TypewriterSpeed;
 
     public AudioClip DialogueSound { get; set; }
+    public bool InDialogue { get; set; }
 
     string[] _lines;
     int _lineIndex;
@@ -59,6 +60,7 @@ public class DialogueRunner : MonoBehaviour
         if (onDialogueComplete != null) _onDialogueComplete = onDialogueComplete;
         if (dialogueSound != null) DialogueSound = dialogueSound;
 
+        InDialogue = true;
         gameObject.SetActive(true);
         StartCoroutine(DialogueAnimation());
     }
@@ -87,6 +89,7 @@ public class DialogueRunner : MonoBehaviour
             gameObject.SetActive(false);
             _onDialogueComplete?.Invoke();
             _onDialogueComplete = null;
+            InDialogue = false;
         }
     }
 }

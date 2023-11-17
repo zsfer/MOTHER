@@ -35,19 +35,18 @@ public class Player : MonoBehaviour
         _hidingScreen.SetActive(IsHiding);
         GameManager.Instance.Freeze(IsHiding);
 
-        if (IsHiding && MotherController.Instance.IsInRoom)
+        _dontMoveText.SetActive(false);
+    }
+
+    public void PlayHideAnimation()
+    {
+        StartCoroutine(HideAnimation());
+        IEnumerator HideAnimation()
         {
-            StartCoroutine(HideAnimation());
-            IEnumerator HideAnimation()
-            {
-                _dontMoveText.SetActive(true);
-                yield return new WaitForSeconds(2);
-                _dontMoveText.SetActive(false);
-            }
-        }
-        else
-        {
+            _dontMoveText.SetActive(true);
+            yield return new WaitForSeconds(2);
             _dontMoveText.SetActive(false);
         }
+
     }
 }
