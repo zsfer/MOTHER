@@ -129,6 +129,7 @@ public class MotherController : MonoBehaviour
 
         if (_state == MotherState.Attack)
         {
+            PuzzleManager.Instance.UnloadPuzzles();
             InventoryUI.Instance.ShowUI(false);
             GameManager.Instance.Freeze(true);
             _timer += Time.deltaTime;

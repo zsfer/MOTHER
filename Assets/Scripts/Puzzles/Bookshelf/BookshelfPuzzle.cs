@@ -46,17 +46,12 @@ public class BookshelfPuzzle : PuzzleBehaviour
         }
         else
         {
-            StartCoroutine(WrongCode());
-            IEnumerator WrongCode()
+            _puzzleOrder = "";
+            GetComponent<AudioSource>().PlayOneShot(_errorSFX);
+            MotherController.Instance.ChangeState(MotherState.GoToRoom);
+            foreach (Transform child in _combinationScreen.transform)
             {
-                GetComponent<AudioSource>().PlayOneShot(_errorSFX);
-                MotherController.Instance.ChangeState(MotherState.GoToRoom);
-                yield return new WaitForSeconds(1);
-                _puzzleOrder = "";
-                foreach (Transform child in _combinationScreen.transform)
-                {
-                    Destroy(child.gameObject);
-                }
+                Destroy(child.gameObject);
             }
         }
     }
